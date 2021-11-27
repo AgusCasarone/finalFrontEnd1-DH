@@ -8,4 +8,141 @@
 *{
     font-family: 'Be Vietnam', sans-serif;
     background-color: #E5E5E5;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+
+header {
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar-container {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    width: 382px;
+    color: #242E52;
+}
+
+.nav-bar-link {
+    color: #242E52;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-bar-link:hover {
+    color: #B3B2B7;
+}
+
+.menu-icon-container {
+    display: none;
+}
+
+/* BUTTONS */
+.nav-bar-button {
+    background-color: #F3603B;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: none;
+    font-size: 13.1806px;
+    line-height: 19px;
+    width: 134px;
+    height: 44px;
+}
+
+.nav-bar-button:hover {    
+    background-color: #fc9077ff;
+    color: #181F39;
+    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.25);
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-container {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+
+.text-info {    
+    line-height: 157.1%;
+/* or 26px */
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+/* TITLES */
+
+h1 {
+    font-size: 3.625rem;
+    line-height: 4rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.035em;
+    color: #232C50;
+}
+
+h2 {
+    color: #232851;
+    font-size: 2.25rem;
+}
+
+/* HOME */
+
+.home-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 10px;
+}
+
+.home-item {
+    margin: 1rem;
+}
+
+/* ABOUT US */
+
+.about-us-conteiner {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.about-us-content {
+    width: 40%;
+}
+
+.about-us-description {
+    align-items: flex-start;
+    justify-content: flex-start;
 }

@@ -22,13 +22,17 @@
 
         <!-- NAV -->
         <section class="header-container">
+            <div class="menu-icon-container">
+                <img src="/img/icon-hamburger.svg" alt="Desplegate nav bar">
+            </div>
+
             <nav>
-                <ul>
-                    <li class="nav-bar-link"><a href="/" target="_blank">Pricing</a></li>
-                    <li class="nav-bar-link"><a href="/" target="_blank">Product</a></li>
-                    <li class="nav-bar-link"><a href="/" target="_blank">About Us</a></li>
-                    <li class="nav-bar-link"><a href="/" target="_blank">Careers</a></li>
-                    <li class="nav-bar-link"><a href="/" target="_blank">Community</a></li>
+                <ul class="nav-bar-container">
+                    <li><a href="/" target="_blank" class="nav-bar-link">Pricing</a></li>
+                    <li><a href="/" target="_blank" class="nav-bar-link">Product</a></li>
+                    <li><a href="/" target="_blank" class="nav-bar-link">About Us</a></li>
+                    <li><a href="/" target="_blank" class="nav-bar-link">Careers</a></li>
+                    <li><a href="/" target="_blank" class="nav-bar-link">Community</a></li>
                 </ul>
             </nav>
         </section>
@@ -44,15 +48,15 @@
 
         <!-- HOME -->
 
-        <section class="main-content-container" id="home">
+        <section class="main-content-container home-container" id="home">
             <div class="home-content">
-                <h1>Bring everyone
+                <h1 class="home-item">Bring everyone
                     <br>together to build
                     <br>better products.</h1>
-                <p class="text-info">Manage makes it simple for software teams
+                <p class="text-info home-item">Manage makes it simple for software teams
                     <br>to plan day-to-day tasks while keeping the
                     <br>large team goals in view </p>
-                <button class="nav-bar-button">Get Started</button>
+                <button class="nav-bar-button home-item">Get Started</button>
             </div>
 
             <div class="home-content">
@@ -62,8 +66,8 @@
 
         <!-- ABOUT US -->
 
-        <section class="main-content-container" id="about-us">
-            <div class="about-us-content">
+        <section class="main-content-container about-us-conteiner" id="about-us">
+            <div class="about-us-content about-us-description">
                 <h2>What´s different about
                     <br>Manage?</h2>
                 <p class="text-info">Manage provides all the functionality your
@@ -72,7 +76,7 @@
                     <br>product teams</p>
             </div>
 
-            <div class="about-us-content">
+            <div class="about-us-content about-us-list">
                 <div class="about-us-characteristics">
                     <h3>Track company-wide progress</h3>
                     <p class="text-description">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
@@ -92,7 +96,7 @@
 
         <!-- REVIEWS -->
 
-        <section class="main-content-container" id="reviews">
+        <section class="main-content-container reviews-container" id="reviews">
             <h2>What they´ve said</h2>
             <div class="cards-container">
                 <card class="review-content">
@@ -114,12 +118,12 @@
                 </card>
             </div>
 
-            <button class="nav-bar-button">Get Started</button>
+            <button class="nav-bar-button" id="review-button">Get Started</button>
         </section>
 
         <!-- CLOSE FRAGMENT -->
 
-        <section class="main-content-container" id="close-fragment">
+        <section class="main-content-container close-fragment-container" id="close-fragment">
             <h2>Simplify how your team works today.</h2>            
             <button class="nav-bar-button">Get Started</button>
         </section>    
