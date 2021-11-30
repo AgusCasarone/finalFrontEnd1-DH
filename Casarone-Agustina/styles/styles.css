@@ -6,7 +6,7 @@
     number-background-color: #fb5e3fff;
 } */
 
-*{
+* {
     font-family: 'Be Vietnam', sans-serif;
     background-color: #E5E5E5;
     box-sizing: border-box;
@@ -18,7 +18,7 @@
 /* HEADER */
 
 header {
-    height: 160px;
+    height: 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -38,7 +38,7 @@ header {
 .nav-bar-link {
     color: #242E52;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 .nav-bar-link:hover {
@@ -53,26 +53,26 @@ header {
 .nav-bar-button {
     background-color: #F3603B;
     color: #fff;
-    padding: 10px;
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
+    padding: 0.625rem;
+    box-shadow: 0rem .25rem 0.4375rem rgba(0, 0, 0, 0.25);
+    border-radius: 3.125rem;
     border: none;
-    font-size: 13.1806px;
-    line-height: 19px;
-    width: 134px;
-    height: 44px;
+    font-size: 0.8237875rem;
+    line-height: 1.1875rem;
+    width: 8.375rem;
+    height: 2.75rem;
 }
 
 .nav-bar-button:hover {    
     background-color: #fc9077ff;
     color: #181F39;
-    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.25);
+    box-shadow: 0rem 6px 9px rgba(0, 0, 0, 0.25);
 }
 
 .nav-bar-button:active {    
-    background-color: rgb(211, 55, 16);
+    background-color: #FBC0B2;
     color: #181F39;
-    box-shadow: 0px 6px 9px rgba(211, 55, 16, 0.25);
+    box-shadow: 0rem 6px 9px rgba(211, 55, 16, 0.25);
 }
 
 /* MAIN */
@@ -84,8 +84,7 @@ main {
 }
 
 .text-info {    
-    line-height: 157.1%;
-/* or 26px */
+    line-height: 1.625rem;
     display: flex;
     align-items: center;
     color: #000000;
@@ -129,7 +128,7 @@ h2 {
 
 /* ABOUT US */
 
-.about-us-conteiner {
+.about-us-container {
     width: 80vw;
     display: flex;
     justify-content: space-between;
@@ -174,7 +173,7 @@ h2 {
     content: url(/img/title-1.svg);
     width: 4.3125rem;
     height: 2.6875rem;
-    margin-left: -7.1875rem;
+    margin-left: -7.187rem;
     padding-right: 2.7rem;
 }
 
@@ -182,7 +181,7 @@ h2 {
     content: url(/img/title-2.svg);
     width: 4.3125rem;
     height: 2.6875rem;
-    margin-left: -7.1875rem;
+    margin-left: -7.187rem;
     padding-right: 2.7rem;
 }
 
@@ -190,14 +189,111 @@ h2 {
     content: url(/img/title-3.svg);
     width: 4.3125rem;
     height: 2.6875rem;
-    margin-left: -7.1875rem;
+    margin-left: -7.187rem;
     padding-right: 2.7rem;
 }
 
 .text-description {
     margin-top: 1.125rem;
     margin-bottom: 2.625rem;
-    line-height: 23px;
+    line-height: 1.4375rem;
     letter-spacing: -0.015em;
     color: #B3B2B7;
+}
+
+/* REVIEWS */
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;   
+    width: 100vw;
+    height: 32rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 15.875rem;
+    width: 24.375rem;
+}
+
+.user-name {
+    margin: 1.3125rem;
+}
+
+.text-review {
+    display: flex;
+    justify-content: center;
+    line-height: 1.5625rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #B9B9C1;
+    padding: 0 1.15625rem;
+}
+
+#review-button {
+    margin-top: 5.25rem;
+}
+
+/* CLOSE FRAGMENT */
+
+#close-fragment{
+    margin-top: 11.25rem;
+}
+
+.close-fragment-container {
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f3613cff;
+}
+
+.close-fragment-title {
+    background-color: #f3613cff;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    width: 27.375rem;
+}
+
+#close-fragment-button {
+    background-color: #fff;
+    color: #F3603B;
+}
+
+#close-fragment-button:hover {
+    background-color: #D5D5D7;
+    color: #D3350D;
+    box-shadow: 0rem 6px 9px rgba(0, 0, 0, 0.25);
+}
+
+#close-fragment-button:active {    
+    background-color: #ACACAF;
+    color: #862209;
+    box-shadow: 0rem 6px 9px rgba(0, 0, 0, 0.30);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #1E1E26;
+    background-color: #1E1E26;
+    color: #fff;
+}
+
+.footer-content-container {
+
 }
