@@ -8,7 +8,6 @@
 
 * {
     font-family: 'Be Vietnam', sans-serif;
-    background-color: #E5E5E5;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -81,6 +80,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(/img/bg-simplify-section-desktop.svg);
+    background-repeat: no-repeat;
 }
 
 .text-info {    
@@ -252,7 +253,7 @@ h2 {
 }
 
 .close-fragment-container {
-    width: 100%;
+    width: 100vw;
     height: 14rem;
     display: flex;
     flex-direction: row;
@@ -288,12 +289,123 @@ h2 {
 
 /* FOOTER */
 
-footer {
-    background-color: #1E1E26;
+.footer-container {
     background-color: #1E1E26;
     color: #fff;
 }
 
 .footer-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15.4375rem;
+}
 
+.footer-content {
+    height: 100%;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-content-social {
+    margin: auto 0;
+}
+
+.social-icons {
+    width: 9.618125rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list-container {
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-list {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.4375rem;
+    margin-top: 1rem;
+}
+
+.footer-link:hover {
+    color: #F3603B;
+}
+
+/* FORM */
+
+label , span {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 17.050625rem;
+}
+
+.form-email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.625rem;
+    position: static;
+    width: 12.5625rem;
+    height: 2.625rem;
+    background: #FFFFFF;
+    border-radius: 3.125rem;
+    border: #fff;
+}
+
+.form-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+    width: 3.9375rem;
+    height: 2.625rem;
+    background: #F3603B;
+    border-radius: 3.125rem;
+    border: none;
+}
+
+.form-button:hover {    
+    background-color: #fc9077ff;
+    color: #181F39;
+    box-shadow: 0rem 6px 9px rgba(0, 0, 0, 0.25);
+}
+
+.form-button:active {    
+    background-color: #FBC0B2;
+    color: #181F39;
+    box-shadow: 0rem 6px 9px rgba(211, 55, 16, 0.25);
+}
+
+.text-rights {
+    right: 10.305625rem;
+    bottom: 3.308125rem;
 }

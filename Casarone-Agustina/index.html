@@ -130,43 +130,43 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer-container">
         <div class="footer-content-container">
             <!-- social -->
-            <div class="footer-content">
+            <div class="footer-content footer-social">
                 <div class="footer-content-social social-logo">
                     <img src="/img/logo-footer.svg" alt="logo">
                 </div>
                 <div class="footer-content-social social-icons">
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-pinterest"></i>
-                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.facebook.com/" target="_blank" class="footer-link"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="footer-link"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank" class="footer-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank" class="footer-link"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-link"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <!-- links -->
-            <div class="footer-content">
-                <ul>
-                    <li class="footer-link"><a href="/" target="_blank">Home</a></li>
-                    <li class="footer-link"><a href="/" target="_blank">Pricing</a></li>
-                    <li class="footer-link"><a href="/" target="_blank">Products</a></li>
-                    <li class="footer-link"><a href="/" target="_blank">About Us</a></li>
+            <div class="footer-content footer-list-container">
+                <ul class="footer-list">
+                    <li><a href="/" target="_blank" class="footer-link">Home</a></li>
+                    <li><a href="/" target="_blank" class="footer-link">Pricing</a></li>
+                    <li><a href="/" target="_blank" class="footer-link">Products</a></li>
+                    <li><a href="/" target="_blank" class="footer-link">About Us</a></li>
                 </ul>
-                <ul>
-                    <li class="footer-link"><a href="/" target="_blank">Careers</a></li>
-                    <li class="footer-link"><a href="/" target="_blank">Community</a></li>
-                    <li class="footer-link"><a href="/" target="_blank">Privacy Policy</a></li>
+                <ul class="footer-list">
+                    <li><a href="/" target="_blank" class="footer-link">Careers</a></li>
+                    <li><a href="/" target="_blank" class="footer-link">Community</a></li>
+                    <li><a href="/" target="_blank" class="footer-link">Privacy Policy</a></li>
                 </ul>
             </div>
             <!-- call to action -->
             <div class="footer-content">
                 <form action="/registro" method="post">
                     <label for="email">Email:</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Update in your inbox..." tabindex="1" required>
+                    <input type="email" class="form-control form-email" name="email" id="email" placeholder="Update in your inbox..." tabindex="1" required>
                     <span class="form-obligatorio">You must enter a valid email</span>
                     <span class="form-error-message">Please insert a valid email.</span>
-                    <input type="submit" class="form-control" name="Go" value="Go" tabindex="2">
+                    <input type="submit" class="form-control form-button" name="Go" value="Go" tabindex="2">
                 </form>
             </div>
         </div>
