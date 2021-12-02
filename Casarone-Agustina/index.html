@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+    <link 
     <link rel="stylesheet" href="/styles/styles.css">
     <title>Final Front End 1</title>
 </head>
@@ -17,28 +18,47 @@
     <header>
         <!-- LOGO -->
         <section class="header-container">
-            <img src="/img/logo-header.svg" alt="logo">
+            <img src="/img/logo-header.svg" alt="logo" id="navbar__logo">
         </section>
 
         <!-- NAV -->
         <section class="header-container">
-            <div class="menu-icon-container">
-                <img src="/img/icon-hamburger.svg" alt="Desplegate nav bar">
-            </div>
 
             <nav>
+                <div class="hamburguer-menu">
+                    <img src="/img/icon-hamburger.svg" alt="Desplegate navegation bar">
+                </div>
+
+                <!-- POSIBLE USO DE JS EXPERIMENTAL -->
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- FIN DEL EXPERIMENTO -->
+
                 <ul class="nav-bar-container">
-                    <li><a href="/" target="_blank" class="nav-bar-link">Pricing</a></li>
-                    <li><a href="/" target="_blank" class="nav-bar-link">Product</a></li>
-                    <li><a href="/" target="_blank" class="nav-bar-link">About Us</a></li>
-                    <li><a href="/" target="_blank" class="nav-bar-link">Careers</a></li>
-                    <li><a href="/" target="_blank" class="nav-bar-link">Community</a></li>
+                    <li class="navbar__item">
+                        <a href="/" target="_blank" class="nav-bar-link">Pricing</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/" target="_blank" class="nav-bar-link">Product</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/" target="_blank" class="nav-bar-link">About Us</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/" target="_blank" class="nav-bar-link">Careers</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/" target="_blank" class="nav-bar-link">Community</a>
+                    </li>
                 </ul>
             </nav>
         </section>
 
         <!-- ACTION -->
-        <section class="header-container">
+        <section class="header-container navbar__btn">
             <button class="nav-bar-button">Get Started</button>
         </section>
     </header>
@@ -59,8 +79,8 @@
                 <button class="nav-bar-button home-item">Get Started</button>
             </div>
 
-            <div class="home-content">
-                <img src="/img/illustration-intro.svg" alt="example image of graphics you can make with Manage">
+            <div class="home-content home-image-container">
+                <img src="/img/illustration-intro.svg" alt="example image of graphics you can make with Manage" class="home-image">
             </div>
         </section>
 
@@ -68,8 +88,7 @@
 
         <section class="main-content-container about-us-container" id="about-us">
             <div class="about-us-content about-us-description">
-                <h2 class="about-us-description-title">What´s different about
-                    <br>Manage?</h2>
+                <h2 class="about-us-description-title">What´s different about Manage?</h2>
                 <p class="text-info">Manage provides all the functionality your
                     <br>team needs, without the complexity. Our
                     <br>software is tailor-made for modern digital
@@ -99,25 +118,31 @@
         <section class="main-content-container reviews-container" id="reviews">
             <h2>What they´ve said</h2>
             <div class="cards-container">
-                <card class="review-content">
+                <card class="review-content card-anisha">
                     <img src="/img/avatar-anisha.png" alt="user's avatar">
                     <h3 class="user-name">Anisha Li</h3>
                     <p class="text-review">“Manage has supercharged our team´s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
                 </card>
 
-                <card class="review-content">
+                <card class="review-content" id="card-ali">
                     <img src="/img/avatar-ali.png" alt="user's avatar">
                     <h3 class="user-name">Ali Bravo</h3>
                     <p class="text-review">“We have been able to cancel so many other subscriptions since using manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
                 </card>
 
-                <card class="review-content">
+                <card class="review-content card-richard">
                     <img src="/img/avatar-richard.png" alt="user's avatar">
                     <h3 class="user-name">Richard Watts</h3>
                     <p class="text-review">“Manage allows us to provide structure and process. It keeps us organized and focused. I can´t stop recommending them to everyone i talk to!”</p>
                 </card>
             </div>
 
+            <div class="review-circles-container">
+                <div class="review-circle"><i class="far fa-circle"></i></div>
+                <div class="review-circle"><i class="fas fa-circle"></i></div>
+                <div class="review-circle"><i class="far fa-circle"></i></div>
+                <div class="review-circle"><i class="far fa-circle"></i></div>
+            </div>
             <button class="nav-bar-button" id="review-button">Get Started</button>
         </section>
 
@@ -138,11 +163,11 @@
                     <img src="/img/logo-footer.svg" alt="logo">
                 </div>
                 <div class="footer-content-social social-icons">
-                    <a href="https://www.facebook.com/" target="_blank" class="footer-link"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.youtube.com/" target="_blank" class="footer-link"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.twitter.com/" target="_blank" class="footer-link"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.pinterest.com/" target="_blank" class="footer-link"><i class="fab fa-pinterest"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank" class="footer-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" class="footer-link"><i class="footer-icon fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="footer-link"><i class="footer-icon fab fa-youtube"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank" class="footer-link"><i class="footer-icon fab fa-twitter"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank" class="footer-link"><i class="footer-icon fab fa-pinterest"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-link"><i class="footer-icon fab fa-instagram"></i></a>
                 </div>
             </div>
             <!-- links -->
@@ -166,11 +191,12 @@
                     <input type="email" class="form-control form-email" name="email" id="email" placeholder="Update in your inbox..." tabindex="1" required>
                     <span class="form-obligatorio">You must enter a valid email</span>
                     <span class="form-error-message">Please insert a valid email.</span>
-                    <input type="submit" class="form-control form-button" name="Go" value="Go" tabindex="2">
+                    <input type="submit" class="form-control form-button" name="GO" value="GO" tabindex="2">
                 </form>
             </div>
         </div>
         <p class="text-rights">Copyright 2020. All Rights Reserved</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -7,10 +7,11 @@
 } */
 
 * {
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 
@@ -24,6 +25,10 @@ header {
     align-items: center;
 }
 
+.hamburguer-menu {
+    display: none;
+}
+
 .nav-bar-container {    
     display: flex;
     flex-direction: row;
@@ -34,6 +39,10 @@ header {
     color: #242E52;
 }
 
+.navbar__toggle {
+    display: none;
+}
+
 .nav-bar-link {
     color: #242E52;
     text-decoration: none;
@@ -42,10 +51,6 @@ header {
 
 .nav-bar-link:hover {
     color: #B3B2B7;
-}
-
-.menu-icon-container {
-    display: none;
 }
 
 /* BUTTONS */
@@ -88,7 +93,8 @@ main {
     line-height: 1.625rem;
     display: flex;
     align-items: center;
-    color: #000000;
+    color: #B3B2B7;
+
 }
 
 /* TITLES */
@@ -200,6 +206,7 @@ h2 {
     line-height: 1.4375rem;
     letter-spacing: -0.015em;
     color: #B3B2B7;
+
 }
 
 /* REVIEWS */
@@ -240,6 +247,10 @@ h2 {
     text-align: center;
     color: #B9B9C1;
     padding: 0 1.15625rem;
+}
+
+.review-circles-container {
+    display: none;
 }
 
 #review-button {
@@ -342,6 +353,10 @@ h2 {
     align-items: flex-start;
 }
 
+.footer-list li {
+    padding: 0.8rem;
+}
+
 .footer-link {
     text-decoration: none;
     color: #fff;
@@ -390,6 +405,7 @@ form {
     height: 2.625rem;
     background: #F3603B;
     border-radius: 3.125rem;
+    color: #fff;
     border: none;
 }
 
@@ -408,4 +424,258 @@ form {
 .text-rights {
     right: 10.305625rem;
     bottom: 3.308125rem;
+    color: #ACACAF;
+}
+
+
+/* ================================================================= */ 
+/* MOBILE */
+
+
+@media screen and (max-width: 834px) {
+    /* Puse 834px porque es el momemnto en que empieza a "romperse" la versión desktop,
+    pero está codeado para una pantalla con un width de 375px */
+
+    /* NAV BAR */
+
+    * {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        font-size: 15px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-container{
+        display: flex;
+        align-items: space-between;
+        justify-content: center;
+    }
+
+    .nav-bar-container {
+        display: none;
+    }
+
+    .navbar__btn {
+        display: none;
+    }
+
+    .hamburguer-menu {
+        display: inline;
+        max-width: max-content;   
+    }
+
+    /* HOME */
+
+    
+    .home-container {
+        width: 90vw;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-image-container {
+        display: flex;
+        align-content: stretch;
+    }
+
+    .home-image {
+        width: 90%;
+    }
+
+    .text-info {
+        color: #B3B2B7;
+    }
+
+    h1 {
+        width: 90vw;
+        font-size: 2.5rem;
+        letter-spacing: 0;
+        line-height: 1em;
+    }
+
+    .home-content {      
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* ABOUT US */
+
+    .about-us-container {
+        width: 90vw;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .about-us-content {
+        width: 100%;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-us-description {
+        margin-bottom: 2rem;
+    }
+
+    .about-us-characteristics-title {
+        letter-spacing: -0.015em;
+        color: #323851;
+        display: flex;
+        align-items: center;
+        background-color: #FEF0EC;
+        padding-left: 6.5rem;
+        font-weight: bold;
+    }
+    
+    #title-1::before {
+        content: url(/img/title-1.svg);
+        width: 4.3125rem;
+        height: 2.6875rem;
+        /* margin-left: -7.187rem; */
+        padding-right: 2.7rem;
+    }
+    
+    #title-2::before {
+        content: url(/img/title-2.svg);
+        width: 4.3125rem;
+        height: 2.6875rem;
+        margin-left: -7.187rem;
+        padding-right: 2.7rem;
+    }
+    
+    #title-3::before {
+        content: url(/img/title-3.svg);
+        width: 4.3125rem;
+        height: 2.6875rem;
+        margin-left: -7.187rem;
+        padding-right: 2.7rem;
+    }
+    
+    /* REVIEWS */
+    
+    .reviews-container {
+        height: 100vh;
+    }
+
+    .card-anisha , .card-richard {
+        display: none;
+    }
+
+    .review-circles-container {
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .review-circle {
+        font-size: 0.5rem;
+        padding: 0.25rem;
+        color: #f3613cff;
+    }
+
+    #review-button {
+        margin-top: -5rem;
+    }
+
+    /* CLOSE FRAGMENT */
+
+    .close-fragment-container {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .close-fragment-title {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 20rem;
+        font-size: 2.5rem;
+        line-height: 1.5em;
+        padding: 0 2rem;
+        font-weight: bold;
+    }
+
+    #close-fragment-button {
+        margin: -2.5rem 0 3rem;
+        padding-bottom: 2rem;
+        font-weight: bold;
+    }
+
+    /* FOOTER */
+
+    .footer-content-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: max-content;
+    }
+
+    .footer-content {
+        display: flex;
+        margin: 1rem;
+    }
+
+    form {
+        width: 85vw;
+        margin-top: 1rem;
+        margin-left: -7.187rem;
+    }
+
+    .form-email {
+        width: 15rem;
+    }
+
+    .form-button {
+        width: 5.5rem;
+    }
+
+    .footer-list-container {
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-social {
+        flex-direction: column-reverse;
+        }
+
+    .footer-content-social {
+        width: 85vw;
+        margin-left: -7.187rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .social-icons {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .footer-icon {
+        font-size: 2rem;
+    }
+
+    .text-rights {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 }
